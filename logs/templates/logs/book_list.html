@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My reading stacks</title>
+    </head>
+    <body>
+        <h1>
+            This is My List
+        </h1>
+        <ul>
+            {% for book in book_list %}
+                <li>{{book.title}} - {{book.author}} ({{book.read_date}})</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
